@@ -29,4 +29,31 @@
 
 8. For github actions: 
 - create PAT (Personal Access Token) with **Full control of private repositories** and **Full control of orgs and teams, read and write org projects**
-- add to repository actions secrets key with the name `PAT` and the value of the created PAT 
+- add to repository actions secrets key with the name `PAT` and the value of the created PAT
+
+```sh
+cd dillinger
+npm i
+node app
+```
+
+For production environments...
+
+```sh
+npm install --production
+NODE_ENV=production node app
+```
+
+## Plugins
+
+**Dillinger** is currently extended with the following plugins.
+Instructions on how to use them in your own application are linked below.
+
+| Plugin | README |
+| ------ | ------ |
+| Dropbox | [plugins/dropbox/README.md][PlDb] |
+| GitHub | [plugins/github/README.md][PlGh] |
+| Google Drive | [plugins/googledrive/README.md][PlGd] |
+| OneDrive | [plugins/onedrive/README.md][PlOd] |
+| Medium | [plugins/medium/README.md][PlMe] |
+| Google Analytics | [plugins/googleanalytics/README.md][PlGa] |
